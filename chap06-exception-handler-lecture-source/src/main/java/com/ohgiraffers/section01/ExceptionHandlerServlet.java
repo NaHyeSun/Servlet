@@ -61,5 +61,4 @@ public class ExceptionHandlerServlet extends HttpServlet {
         out.print(responseBuilder.toString());
         out.close();
     }
-
 }
