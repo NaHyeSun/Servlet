@@ -36,6 +36,8 @@ public class DeleteSessionServlet extends HttpServlet {
             System.out.println("----------------------------------");
             session.invalidate();
 
+            /* invalidate를 호출하면 세션 자체를 무효화 했기 때문에 이후 세션을 이용하는 것은 에러가 발생한다.
+            *  즉, 세션 내의 데이터를 지우는 것 뿐 아니라 세션을 강제로 만료시켰다고 볼 수 있다. */
             sessionNames = session.getAttributeNames();
             while (sessionNames.hasMoreElements()) {
                 System.out.println(sessionNames.nextElement());
