@@ -15,7 +15,7 @@ public class RequestHaderPrintServlet extends HttpServlet {
         /* [ 헤더의 종류 ]
         *  1. General header : 요청 및 응답 모두에 적용되지만 최종적으로는 body에 전송되는 것과 관련 없는 헤더
         *  2. Request header : Fetch될 리소스나 클라이언트 자체에 대한 상세 정보를 포함하는 헤더
-        *  3. Response header : 위치나 서버 자체왁 ㅏㅌ은 응답에 대한 부가적인 정보를 갖는 헤더
+        *  3. Response header : 위치나 서버 자체와 같은 응답에 대한 부가적인 정보를 갖는 헤더
         *  4. Entity header : 컨텐츠 길이나 MIME 타입과 같은 엔티티 body에 대한 상세 정보를 포함하는 헤더
         *                     (요청, 응답 모두 사양되며, 메시지 바디의 컨텐츠를 나타내므로 GET 요청은 해당X )
         *
